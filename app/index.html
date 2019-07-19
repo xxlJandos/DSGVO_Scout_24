@@ -16,13 +16,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/view1">view1</a></li>
-    <li><a href="#!/view2">view2</a></li>
-  </ul>
-  <div ng-init="myVar = '../ressources/DSGVOScout24_logo.svg.png'">
+  <div class="menu">
+    <div><a href="#!/view1"><i class="fas fa-question-circle"></i></a></div>
+    <div><a href="#!/view2">Help</a></div>
+  </div>
+  <div ng-init="myVar = '../ressources/DSGVOScout24_logo.svg.png'" id="logo_login_area">
     <img ng-src="{{myVar}}" class="logo_login">
   </div>
+  <form>
+    <ul class="login_list">
+      <li class="input_box"><input type="text" name="UserName" placeholder="UserName"></li>
+      <li class="input_box"><input type="password" name="Password" placeholder="Password"></li>
+      <li><button class="login_btn">Login</button></li>
+    </ul>
+  </form> 
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
