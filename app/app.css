@@ -26,12 +26,27 @@
   margin-bottom: 1%;
 }
 
-.login_btn{
+#Password_input, #UserName_input{
+  -webkit-appearance: none;
+  background-color: none;
+  border: 1px solid #003366;
+  line-height: 0;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  font-weight: 100;
+  letter-spacing: 0.01em;
   position: relative;
-  display:block;
+  z-index: 1;
+}
+
+.login_btn{
+  margin: auto;
+  position: relative;
+  display: block;
   height: 45px;
   width: 150px;
-  margin: 10px 7px;
   padding: 5px 5px;
   font-weight: 700;
   font-size: 15px;
