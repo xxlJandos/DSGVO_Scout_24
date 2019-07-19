@@ -17,10 +17,10 @@
 </head>
 <body>
   <div class="menu">
-    <div class="support_icons">
-      <i class="material-icons" id="help_icon">help_outline</i>
-      <i class="material-icons" id="info_icon">info_outline</i>
-    </div>
+    <ul class="support_icons">
+      <li id="info_icon"><i class="material-icons" id="info_icon">info_outline</i></li>
+      <li id="help_icon"><i class="material-icons" id="help_icon">help_outline</i></li>
+    </ul>
   </div>
   <div ng-init="myVar = '../ressources/DSGVOScout24_logo.svg.png'" id="logo_login_area">
     <img ng-src="{{myVar}}" class="logo_login">
@@ -30,8 +30,10 @@
       <li class="input_box"><input type="text" name="UserName" placeholder="E-Mail Adresse" id="UserName_input"></li>
       <li class="input_box"><input type="password" name="Password" placeholder="Passwort" id="Password_input"></li>
     </ul>
-    <button class="login_btn">Login</button>
+    <button class="login_btn" onclick="getLoginData();">Login</button>
   </form> 
+
+
 
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
