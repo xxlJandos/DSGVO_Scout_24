@@ -22,9 +22,12 @@
       <li id="help_icon"><i class="material-icons" id="help_icon">help_outline</i></li>
     </ul>
   </div>
-  <div ng-init="myVar = '../ressources/DSGVOScout24_logo.svg.png'" id="logo_login_area">
-    <img ng-src="{{myVar}}" class="logo_login">
+  <div ng-init="imagePath = '../ressources/DSGVOScout24_logo.svg.png'" id="logo_login_area">
+    <img ng-src="{{imagePath}}" class="logo_login">
   </div>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
   <form>
     <ul class="login_list">
       <li class="input_box"><input type="text" name="UserName" placeholder="E-Mail Adresse" id="UserName_input"></li>
@@ -33,8 +36,9 @@
     <button class="login_btn" onclick="getLoginData();">Login</button>
   </form> 
 
-
-
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>

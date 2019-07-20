@@ -129,9 +129,3 @@
 .login_btn:hover:after {
   top: 0;
 }
-
-#login_result{
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 5%;
-}
