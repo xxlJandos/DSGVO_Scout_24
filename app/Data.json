@@ -1,0 +1,22 @@
+{
+    "users": {
+        "nico@fhdw.de": {
+            "UserId": "1",
+            "FirstName": "Nico",
+            "LastName": "Tillmann",
+            "Password": "1234"
+        },
+        "jander@fhdw.de": {
+            "UserId": "2",
+            "FirstName": "Jander",
+            "LastName": "Friebe",
+            "Password": "1234"
+        },
+        "louis@fhdw.de": {
+            "UserId": "3",
+            "FirstName": "Louis",
+            "LastName": "Grabenschröer",
+            "Password": "1234"
+        }
+    }
+}

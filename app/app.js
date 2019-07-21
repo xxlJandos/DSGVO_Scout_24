@@ -15,7 +15,7 @@ function Login(){
   var Password = getPassword();
   var correctLoginData = checkLoginData(UserName, Password);
   if(correctLoginData){
-    window.location.href = "Main.html";
+    window.location.href = "main.html";
   }else{
     showLoginPopup();
   }
@@ -32,9 +32,8 @@ function getPassword(){
 }
 
 function checkLoginData(UserName, Password){
-  // Checkt ob die LoginDaten im JSON sind
+  // Checkt ob die LoginDaten im JSON sind              
   if(UserName == "Louis" && Password =="1234"){
-    alert("Login erfolgreich!");
     return true;
   }else{
     return false;
