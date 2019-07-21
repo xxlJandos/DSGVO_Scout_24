@@ -3,14 +3,10 @@
 // Declare app level module which depends on views, and core components
 angular.module('myApp', [
   'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/view1'});
 }]);
 
 // Login-Prozess
@@ -18,6 +14,11 @@ function Login(){
   var UserName = getUserName();
   var Password = getPassword();
   var correctLoginData = checkLoginData(UserName, Password);
+  if(correctLoginData){
+    window.location.href = "Main.html";
+  }else{
+    showLoginPopup();
+  }
 }
 
 function getUserName(){
@@ -36,12 +37,11 @@ function checkLoginData(UserName, Password){
     alert("Login erfolgreich!");
     return true;
   }else{
-    showPopup();
     return false;
   }
 }
 
-function showPopup(){
+function showLoginPopup(){
   // Zieht sich das PopUp
   var popUpLogin = document.getElementById("popUpLogin");
 

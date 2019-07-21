@@ -188,6 +188,7 @@
   padding: 20px;
   width: 30%;
   border-radius: 10px;
+  border: 2px red solid;
 }
 
 /* The PopUp Close Button */
@@ -202,7 +203,12 @@
 
 .popup_close:hover,
 .popup_close:focus {
-  color: #ff7300;
+  color: red;
   text-decoration: none;
   cursor: pointer;
+}
+
+#popUpLogin-content-Text{
+  margin-top: 35px;
+  font-weight: bold;
 }
