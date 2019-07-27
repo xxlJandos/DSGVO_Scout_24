@@ -11,6 +11,10 @@
   padding-right: 20px;
 }
 
+.logo_menu{
+
+}
+
 .support_icons{
   list-style: none;
   text-align: right;
@@ -22,11 +26,11 @@
   height: 68px;
 }
 
-#info_icon, #help_icon{
+#info_icon, #settings_icon{
   font-size: 50px;
 }
 
-.help_icon, .info_icon{
+.settings_icon, .info_icon{
   display: inline-block;
   color: white;
   cursor: pointer;
@@ -65,6 +69,10 @@
 #infoTooltipText{
   margin-bottom: -80px;
   margin-top: -25px;
+}
+
+.settings_icon:hover {
+  color: #ff7300;
 }
 
 /* Login Bereich mit Logo */

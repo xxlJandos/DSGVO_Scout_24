@@ -16,20 +16,29 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-    <!--Menü mit den entsprechenden support-Icons-->
-    <div class="menu">
-            <div class="support_icons">
-              <div class="info_icon">
-                <i class="material-icons" id="info_icon">info_outline</i>
-                <div class="infoTooltip">
-                  <p id="infoTooltipText" style="font-weight: bold">Erstellt von:</p>
-                  <p id="infoTooltipText">Nico Tillmann, Jander Friebe</p>
-                  <p id="infoTooltipText">und</p>
-                  <p id="infoTooltipText">Louis Grabenschröer</p>
-                  <p id="infoTooltipText">PFBW417a</p>
-                </div>
-              </div>
+      <!--Menü mit den entsprechenden support-Icons-->
+      <div class="menu">
+        <!--Logo für DSGVO Scout 24
+        <div ng-init="imagePath = '../ressources/DSGVOScout24_logo.svg.png'" id="logo_menu_area">
+          <img ng-src="{{imagePath}}" class="logo_menu">
+        </div>
+        -->
+        <div class="support_icons">
+          <div class="settings_icon">
+            <!--Hier muss noch die entsprechende Methode verknüpft werden-->
+            <i class="material-icons" id="settings_icon" onclick="showsettingsPopUp()">settings</i>
+          </div>
+          <div class="info_icon">
+            <i class="material-icons" id="info_icon">info_outline</i>
+            <div class="infoTooltip">
+              <p id="infoTooltipText" style="font-weight: bold">Erstellt von:</p>
+              <p id="infoTooltipText">Nico Tillmann, Jander Friebe</p>
+              <p id="infoTooltipText">und</p>
+              <p id="infoTooltipText">Louis Grabenschröer</p>
+              <p id="infoTooltipText">PFBW417a</p>
             </div>
           </div>
+        </div>
+      </div>
     </body>
 </html>
